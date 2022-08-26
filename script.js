@@ -82,3 +82,34 @@ const sumAll = (...nums)=>{
 const details = ((firstName,lastName, ...otherName)=>{
     console.log(`first-name : ${firstName}\n last-name : ${lastName} \n Other-name : ${otherName}`)
 })
+// DESTRUCTURING OF AN ARRAY
+const players = [
+   
+    'Roberto',
+    'Blade',
+    
+    'De Jong',
+    
+    'Pjanic',
+    'Ter stergen',
+    'Ansu Fati',
+    'Raphinha',
+    'Lewandoski',
+    'Araujo',
+    'Kounde',
+    'pedri'
+    
+
+]
+const[,,,,...untouchable] = players
+let nominnes = [
+    'benzema',
+    'Modric',
+    'junior',
+    'cortrios',
+    'Kelvin De brunye',
+    'Mane',
+    'Mpape'
+]
+const[winner,...others] = nominnes
+const[BestyoungStar,,,,,,Bestyoungplayer]= nominnes
