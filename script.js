@@ -111,5 +111,18 @@ let nominnes = [
     'Mane',
     'Mpape'
 ]
+const[bestplayerInSpain,,,,BestPlayerInEng] = nominnes
 const[winner,...others] = nominnes
-const[BestyoungStar,,,,,,Bestyoungplayer]= nominnes
+const[Bestplayer,BestMidfielder,BestyoungPlayer]= nominnes
+
+
+// DESTRUCTURING  OBJECTS
+const data = {
+    name : 'Daniel',
+    surname :'ojingwa',
+    hobby : 'foorball and adding values',
+    title : 'African gaint'
+
+    
+}
+const{name,surname,...otherHobbies} = data
