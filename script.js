@@ -125,4 +125,39 @@ const data = {
 
     
 }
-const{name,surname,...otherHobbies} = data
+const{
+    name: identifier,
+    surname : fathersName
+}= data
+// const{name,surname,...otherHobbies} = data
+// DESTRUTRUING NESTED OBJECTS
+// STUDENT DATA
+let studentData = [
+    {
+        name : 'Daniel',
+        surname : 'Ojingwa',
+        grade : 90
+    },
+    {
+        name : 'lionel',
+        surname : 'Messi',
+        grade : 85
+
+    },{
+        name : 'luiz',
+        surname : 'Suarez',
+        grade : 75
+
+    },{
+        name : 'neymar',
+        surname : 'junior',
+        grade :70
+
+    },
+]
+const[,,{name:student3,surname:FathersName}] = studentData
+// trying to get the second student on the list
+const[,secondPosition] = studentData
+const{name,surname,grade} = secondPosition
+ const[,,,lastPosition] = studentData
+//  const[{name,surname,grade}] = lastPosition
