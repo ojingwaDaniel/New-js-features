@@ -54,6 +54,7 @@ let radomValue = (list)=>{
         JerseyNumbers
     }
  }
+ //computed property
    
  
 
