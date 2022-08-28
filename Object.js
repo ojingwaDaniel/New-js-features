@@ -55,9 +55,19 @@ let  profile = {
 
 const executor = {
     list : ['phone','headphone','polo','shirts','shoe','trousers','jersey','earpod'],
-    startButton(){
+    pickitem(){
         let idx = Math.floor(Math.random()* this.list.length)
-        console.log(this.list[idx])
+        return this.list[idx]
+    },
+    startButton(){
+       this.control = setInterval(()=>{
+            console.log(this.pickitem())
+
+        },3000)
+    },
+    stopControl(){
+        clearInterval(this.control)
+        console.log('END OF LIST')
     }
 
 }
