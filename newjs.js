@@ -22,7 +22,7 @@ const ballonDor= [
     },
 ]
 const[winner] = ballonDor
-const [second] =ballonDor
+const [second] = ballonDor
 const[third] = ballonDor
 const[,{name,club}]= ballonDor
 const champion = ([,,,{name,club}])=>{
