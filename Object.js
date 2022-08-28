@@ -51,3 +51,13 @@ let  profile = {
     }
 }
 // this can give different values depending on how you call it
+// creating a code that runs a  list of items in a list after 3 sec and create a methood to stop the code
+
+const executor = {
+    list : ['phone','headphone','polo','shirts','shoe','trousers','jersey','earpod'],
+    startButton(){
+        let idx = Math.floor(Math.random()* this.list.length)
+        console.log(this.list[idx])
+    }
+
+}
