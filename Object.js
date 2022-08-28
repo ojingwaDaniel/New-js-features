@@ -36,3 +36,18 @@ let timeRegulatory = [
         }
     }
 ] 
+// using THIS
+let  profile = {
+    firstName : 'Anselm',
+    lastName : 'Chikezie',
+    nickName : 'odogwu',
+    fullname(){
+        const{firstName,lastName,nickName} = this
+
+        return `${firstName} ${lastName} A.KA ${nickName}`
+    },
+    biography(){
+        console.log(`${this.fullname()} is my gee for life . He is more than a brother ,got my back always`)
+    }
+}
+// this can give different values depending on how you call it
